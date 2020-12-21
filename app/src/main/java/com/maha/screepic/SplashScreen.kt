@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.PersistableBundle
 import android.view.animation.AnimationUtils
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 
@@ -17,6 +19,7 @@ class SplashScreen: AppCompatActivity() {
         val botAnimation = AnimationUtils.loadAnimation(this,R.anim.bot_animation)
 
 
+        val tvBrand: TextView = findViewById(R.id.tvBrand)
         tvBrand.startAnimation(botAnimation)
 
         val splashScreenTimeOut = 4000

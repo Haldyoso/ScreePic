@@ -8,5 +8,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setTheme(R.style.Theme_ScreePic)
         setContentView(R.layout.activity_main)
+
     }
 }
