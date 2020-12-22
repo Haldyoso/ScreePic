@@ -22,7 +22,7 @@ class SplashScreen: AppCompatActivity() {
         val tvBrand: TextView = findViewById(R.id.tvBrand)
         tvBrand.startAnimation(botAnimation)
 
-        val splashScreenTimeOut = 4000
+        val splashScreenTimeOut = 2000
         val homeIntent = Intent(this@SplashScreen, MainActivity::class.java )
 
         Handler().postDelayed({

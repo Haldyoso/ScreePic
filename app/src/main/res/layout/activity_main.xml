@@ -7,12 +7,126 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_AppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/intro_rustg_base2line"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/materialColorBlack500"
+        android:textSize="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_AppName">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/bu_New"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/rounded_button"
+
+                    android:longClickable="false"
+                    android:saveEnabled="false"
+                    app:srcCompat="@drawable/ic_baseline_fiber_new_100" />
+
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/bu_Cars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_baseline_directions_car_100" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+
+                    android:text="CARS"
+                    android:textColor="@color/materialColorBlack200"
+                    android:textSize="20dp"
+
+                    />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/bu_Dark"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@color/materialColorBlack900"
+                />
+
+            <ImageButton
+                android:id="@+id/bu_Light"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@color/white" />
+
+            <ImageButton
+                android:id="@+id/bu_Nature"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_nature_100" />
+
+            <ImageButton
+                android:id="@+id/bu_People"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_people_100" />
+
+            <ImageButton
+                android:id="@+id/bu_xxx"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_visibility_off_100" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Hello my Lord, Martin!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
