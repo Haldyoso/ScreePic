@@ -20,7 +20,7 @@
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="96dp"
+        android:layout_height="130dp"
         android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,25 +33,36 @@
 
             >
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
                 <ImageButton
                     android:id="@+id/bu_New"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
 
                     android:background="@drawable/rounded_button"
 
                     android:longClickable="false"
                     android:saveEnabled="false"
-                    app:srcCompat="@drawable/ic_baseline_fiber_new_100" />
+                    app:srcCompat="@drawable/ic_baseline_home_100" />
 
+                <TextView
+                    android:id="@+id/tv_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
 
-            </FrameLayout>
+                    android:clickable="false"
+                    android:text="NEW"
+                    android:textColor="@color/materialColorBlack200"
+
+                    android:textSize="20sp" />
+            </LinearLayout>
 
 
             <LinearLayout
@@ -62,60 +73,157 @@
 
                 <ImageButton
                     android:id="@+id/bu_Cars"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     app:srcCompat="@drawable/ic_baseline_directions_car_100" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/tv_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:clickable="false"
+                    android:text="CARS"
+
+                    android:textColor="@color/materialColorBlack200"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/bu_Dark"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@color/materialColorBlack900" />
+
+                <TextView
+                    android:id="@+id/tv_03"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:clickable="false"
 
-                    android:text="CARS"
+                    android:text="DARK"
                     android:textColor="@color/materialColorBlack200"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
 
                     />
+
             </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/bu_Dark"
-                android:layout_width="100dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@color/materialColorBlack900"
-                />
+                android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/bu_Light"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@color/white" />
+                <ImageButton
+                    android:id="@+id/bu_Light"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@color/white" />
 
-            <ImageButton
-                android:id="@+id/bu_Nature"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_baseline_nature_100" />
+                <TextView
+                    android:id="@+id/tv_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
 
-            <ImageButton
-                android:id="@+id/bu_People"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_baseline_people_100" />
+                    android:clickable="false"
+                    android:text="LIGHT"
+                    android:textColor="@color/materialColorBlack200"
 
-            <ImageButton
-                android:id="@+id/bu_xxx"
-                android:layout_width="wrap_content"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_baseline_visibility_off_100" />
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/bu_Nature"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/ic_baseline_nature_100" />
+
+                <TextView
+                    android:id="@+id/tv_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+                    android:clickable="false"
+                    android:text="NATURE"
+                    android:textColor="@color/materialColorBlack200"
+
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/bu_People"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/ic_baseline_people_100" />
+
+                <TextView
+                    android:id="@+id/tv_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:clickable="false"
+                    android:text="PPL"
+                    android:textColor="@color/materialColorBlack200"
+
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/bu_xxx"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/ic_baseline_visibility_off_100" />
+
+                <TextView
+                    android:id="@+id/tv_07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:clickable="false"
+                    android:text="XXX"
+                    android:textColor="@color/materialColorBlack200"
+
+                    android:textSize="20sp" />
+
+            </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
 
