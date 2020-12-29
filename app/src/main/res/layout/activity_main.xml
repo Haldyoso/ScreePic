@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/materialColorBlack900">
 
     <TextView
         android:id="@+id/tv_AppName"
@@ -14,11 +15,12 @@
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="@color/materialColorBlack500"
-        android:textSize="50dp"
+        android:textSize="50sp"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="50dp" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:layout_marginTop="5dp"
@@ -61,7 +63,7 @@
                     android:text="NEW"
                     android:textColor="@color/materialColorBlack200"
 
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/txtSizeCategories" />
             </LinearLayout>
 
 
@@ -87,7 +89,7 @@
                     android:text="CARS"
 
                     android:textColor="@color/materialColorBlack200"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/txtSizeCategories" />
 
             </LinearLayout>
 
@@ -112,7 +114,7 @@
 
                     android:text="DARK"
                     android:textColor="@color/materialColorBlack200"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/txtSizeCategories"
 
                     />
 
@@ -142,7 +144,7 @@
                     android:text="LIGHT"
                     android:textColor="@color/materialColorBlack200"
 
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/txtSizeCategories" />
 
             </LinearLayout>
 
@@ -169,7 +171,7 @@
                     android:text="NATURE"
                     android:textColor="@color/materialColorBlack200"
 
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/txtSizeCategories" />
 
             </LinearLayout>
 
@@ -195,7 +197,7 @@
                     android:text="PPL"
                     android:textColor="@color/materialColorBlack200"
 
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/txtSizeCategories" />
 
             </LinearLayout>
 
@@ -221,20 +223,37 @@
                     android:text="XXX"
                     android:textColor="@color/materialColorBlack200"
 
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/txtSizeCategories" />
 
             </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_menu_active"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello my Lord, Martin!"
+        android:text="@string/tv_menu_active_content"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:fontFamily="@font/intro_rustg_base2line"
+        android:textColor="@color/materialColorBlack500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView3" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_menu_active">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.gridlayout.widget.GridLayout>
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
