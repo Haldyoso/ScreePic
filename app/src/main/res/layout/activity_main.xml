@@ -43,13 +43,14 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/bu_New"
+                    android:id="@+id/buttonChangeDisplayText"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
 
                     android:background="@drawable/rounded_button"
 
                     android:longClickable="false"
+
                     android:saveEnabled="false"
                     app:srcCompat="@drawable/ic_baseline_home_100" />
 
@@ -230,7 +231,7 @@
     </HorizontalScrollView>
 
     <TextView
-        android:id="@+id/tv_menu_active"
+        android:id="@+id/textViewDisplayTextChange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_menu_active_content"
@@ -246,7 +247,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_menu_active">
+        app:layout_constraintTop_toBottomOf="@+id/textViewDisplayTextChange">
 
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
