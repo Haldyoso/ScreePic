@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
-
+                setMainText
                 <ImageButton
                     android:id="@+id/bu_New"
                     android:layout_width="100dp"
@@ -50,8 +50,9 @@
                     android:background="@drawable/rounded_button"
 
                     android:longClickable="false"
-
+                    android:onClick="setMainText"
                     android:saveEnabled="false"
+                    android:tag="NEW"
                     app:srcCompat="@drawable/ic_baseline_home_100" />
 
                 <TextView
@@ -78,7 +79,8 @@
                     android:id="@+id/bu_Cars"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-
+                    android:onClick="setMainText"
+                    android:tag="Cars"
                     app:srcCompat="@drawable/ic_baseline_directions_car_100" />
 
                 <TextView
@@ -105,6 +107,8 @@
                     android:id="@+id/bu_Dark"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:onClick="setMainText"
+                    android:tag="Dark"
                     app:srcCompat="@color/materialColorBlack900" />
 
                 <TextView
@@ -133,6 +137,8 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_weight="1"
+                    android:tag="Light"
+                    android:onClick="setMainText"
                     app:srcCompat="@color/white" />
 
                 <TextView
@@ -160,6 +166,8 @@
                     android:id="@+id/bu_Nature"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:onClick="setMainText"
+                    android:tag="Nature"
                     app:srcCompat="@drawable/ic_baseline_nature_100" />
 
                 <TextView
@@ -187,6 +195,8 @@
                     android:id="@+id/bu_PPL"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:onClick="setMainText"
+                    android:tag="PPL"
                     app:srcCompat="@drawable/ic_baseline_people_100" />
 
                 <TextView
@@ -213,6 +223,8 @@
                     android:id="@+id/bu_xxx"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:onClick="setMainText"
+                    android:tag="XXX"
                     app:srcCompat="@drawable/ic_baseline_visibility_off_100" />
 
                 <TextView
