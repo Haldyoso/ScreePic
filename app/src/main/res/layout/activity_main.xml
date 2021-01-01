@@ -43,7 +43,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/buttonChangeDisplayText"
+                    android:id="@+id/bu_New"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
 
@@ -55,7 +55,7 @@
                     app:srcCompat="@drawable/ic_baseline_home_100" />
 
                 <TextView
-                    android:id="@+id/tv_01"
+                    android:id="@+id/tv_New"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -78,10 +78,11 @@
                     android:id="@+id/bu_Cars"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+
                     app:srcCompat="@drawable/ic_baseline_directions_car_100" />
 
                 <TextView
-                    android:id="@+id/tv_02"
+                    android:id="@+id/tv_Cars"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -107,7 +108,7 @@
                     app:srcCompat="@color/materialColorBlack900" />
 
                 <TextView
-                    android:id="@+id/tv_03"
+                    android:id="@+id/tv_Dark"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -135,7 +136,7 @@
                     app:srcCompat="@color/white" />
 
                 <TextView
-                    android:id="@+id/tv_04"
+                    android:id="@+id/tv_Light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -162,7 +163,7 @@
                     app:srcCompat="@drawable/ic_baseline_nature_100" />
 
                 <TextView
-                    android:id="@+id/tv_05"
+                    android:id="@+id/tv_Nature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -183,13 +184,13 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/bu_People"
+                    android:id="@+id/bu_PPL"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:srcCompat="@drawable/ic_baseline_people_100" />
 
                 <TextView
-                    android:id="@+id/tv_06"
+                    android:id="@+id/tv_PPL"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -215,7 +216,7 @@
                     app:srcCompat="@drawable/ic_baseline_visibility_off_100" />
 
                 <TextView
-                    android:id="@+id/tv_07"
+                    android:id="@+id/tv_xxx"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -231,15 +232,16 @@
     </HorizontalScrollView>
 
     <TextView
-        android:id="@+id/textViewDisplayTextChange"
+        android:id="@+id/textMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/intro_rustg_base2line"
         android:text="@string/tv_menu_active_content"
         android:textAlignment="center"
-        android:textSize="40sp"
-        android:fontFamily="@font/intro_rustg_base2line"
         android:textColor="@color/materialColorBlack500"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/horizontalScrollView3" />
 
@@ -247,7 +249,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDisplayTextChange">
+        app:layout_constraintTop_toBottomOf="@+id/textMenu">
 
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"

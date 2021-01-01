@@ -2,13 +2,8 @@ package com.maha.screepic
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.view.View
-import android.widget.Button
 import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.TextView
-import org.w3c.dom.Text
 
 
 class MainActivity : AppCompatActivity() {
@@ -17,9 +12,35 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setTheme(R.style.Theme_ScreePic)
         setContentView(R.layout.activity_main)
-        findViewById<ImageButton>(R.id.buttonChangeDisplayText).setOnClickListener{
-            findViewById<TextView>(R.id.textViewDisplayTextChange).text = "nieco"
-        }
+
+        //Working buttons
+        findViewById<ImageButton>(R.id.bu_New).setOnClickListener{
+            findViewById<TextView>(R.id.textMenu).text =
+                findViewById<TextView>(R.id.tv_New).text}
+
+        findViewById<ImageButton>(R.id.bu_Cars).setOnClickListener{
+            findViewById<TextView>(R.id.textMenu).text =
+                    findViewById<TextView>(R.id.tv_Cars).text}
+
+        findViewById<ImageButton>(R.id.bu_Dark).setOnClickListener{
+            findViewById<TextView>(R.id.textMenu).text =
+                    findViewById<TextView>(R.id.tv_Dark).text}
+
+        findViewById<ImageButton>(R.id.bu_Light).setOnClickListener{
+            findViewById<TextView>(R.id.textMenu).text =
+                    findViewById<TextView>(R.id.tv_Light).text}
+
+        findViewById<ImageButton>(R.id.bu_Nature).setOnClickListener{
+            findViewById<TextView>(R.id.textMenu).text =
+                    findViewById<TextView>(R.id.tv_Nature).text}
+
+        findViewById<ImageButton>(R.id.bu_PPL).setOnClickListener{
+            findViewById<TextView>(R.id.textMenu).text =
+                    findViewById<TextView>(R.id.tv_PPL).text}
+
+        findViewById<ImageButton>(R.id.bu_xxx).setOnClickListener{
+            findViewById<TextView>(R.id.textMenu).text =
+                    findViewById<TextView>(R.id.tv_xxx).text}
 
 
 
@@ -31,8 +52,11 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
-
+    /* fun nieco2(view: View) {
+ 
+         findViewById<ImageButton>(R.id.buttonChangeDisplayText).setOnClickListener{
+             findViewById<TextView>(R.id.textViewDisplayTextChange).text = "nieco"}
+     }*/
 
 
 
