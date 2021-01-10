@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/materialColorBlack900">
+    android:background="@color/materialColorBlack900"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tv_AppName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/intro_rustg_base2line"
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="@color/materialColorBlack500"
         android:textSize="50sp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView3"
@@ -42,6 +42,7 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
                 setMainText
+
                 <ImageButton
                     android:id="@+id/bu_New"
                     android:layout_width="100dp"
@@ -137,8 +138,8 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_weight="1"
-                    android:tag="Light"
                     android:onClick="setMainText"
+                    android:tag="Light"
                     app:srcCompat="@color/white" />
 
                 <TextView
@@ -257,18 +258,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/horizontalScrollView3" />
 
-    <FrameLayout
+    <ScrollView
+        android:id="@+id/aasdasda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textMenu">
+        app:layout_constraintTop_toBottomOf="@id/textMenu">
 
-        <androidx.gridlayout.widget.GridLayout
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            tools:itemCount="10">
 
-        </androidx.gridlayout.widget.GridLayout>
-    </FrameLayout>
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+
+        android:layout_gravity="center_horizontal"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aasdasda" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
