@@ -14,7 +14,6 @@
         android:layout_marginTop="50dp"
         android:fontFamily="@font/intro_rustg_base2line"
         android:text="@string/app_name"
-
         android:textAlignment="center"
         android:textColor="@color/materialColorBlack500"
         android:textSize="50sp"
